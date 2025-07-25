@@ -2,6 +2,7 @@ package net.gray.spraypaint;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.gray.spraypaint.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +12,6 @@ public class GraysSpraypaint implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
