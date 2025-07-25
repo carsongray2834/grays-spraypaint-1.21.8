@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "spraypaint",
+	"version": "${version}",
+	"name": "Gray's Spraypaint",
+	"description": "This mod adds spray paint to Minecraft",
+	"authors": [
+		"Gray"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/spraypaint/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.gray.spraypaint.GraysSpraypaint"
+		],
+		"fabric-datagen": [
+			"net.gray.spraypaint.GraysSpraypaintDataGenerator"
+		],
+		"client": [
+			"net.gray.spraypaint.SprayPaintClientClass"
+		]
+	},
+	"mixins": [
+		"spraypaint.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
